@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">CPE101</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Snooker JP</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+                <li><a href="#skill" onclick="toggleMenu()">Skill</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Snooker JP profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Snooker</h1>
+            <p class="section__text__p2">Kmutt College Student</p>
+            <div class="btn-container"> <!-- Removed the '=' -->
+                <button class="btn btn-color-2" onclick="location.href='./#about'">About Me</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact info</button>
+            </div>
+            <div id="socials-container"> <!-- Changed to match CSS -->
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/AboutMePic.JPG" alt="Profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="education icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>1st year<br>Kmutt College Student</p>
+                    </div>
+                </div>
+                <div class="text-container"></div>
+                <p>Hi! I’m Jeerasak Phisawong, but most people call me Snooker. I’m currently studying Computer Engineering at King Mongkut’s University of Technology Thonburi (KMUTT), where I’m diving deep into the world of technology, programming, and problem-solving. Because I’m being lazy, Building things that make life easier is what I passionate in and love challenging myself with coding projects and learning more about areas like website development, algorithms, and electronics. I’m excited to see where my journey in tech will take me!</p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#education'">
+    </section>
+    <section id="education">
+        <p class="section__text__p1">Here Is My</p>
+        <h1 class="title">Education</h1>
+        <div class="education-container">
+            <div class="education-frame">
+                <h3>Primary School</h3>
+                <p>Saritdidet School Chanthaburi</p>
+            </div>
+            <div class="education-frame">
+                <h3>Junior High School</h3>
+                <p>Saritdidet School Chanthaburi</p>
+            </div>
+            <div class="education-frame">
+                <h3>High School</h3>
+                <p>Siyanuson School</p>
+            </div>
+            <div class="education-frame">
+                <h3>University</h3>
+                <p>King Mongkut’s University of Technology Thonburi (KMUTT)</p>
+            </div>
+        </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skill'">
+    </section>
+    <section id="skill">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skill</h1>
+    <div class="skill-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="skill-sub-title">Programming Skill</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets//checkmark.png" 
+                            alt="Skill icon"
+                            class=icon>
+                            <div>
+                                <h3>C</h3>
+                                <p>Basic</p>
+                            </div>
+                    </article>
+                    <article>
+                        <img src="./assets//checkmark.png" 
+                            alt="Skill icon"
+                            class=icon>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Amateur</p>
+                            </div>
+                    </article>
+                    <article>
+                        <img src="./assets//checkmark.png" 
+                            alt="Skill icon"
+                            class=icon>
+                            <div>
+                                <h3>HMTL</h3>
+                                <p>Amateur</p>
+                            </div>
+                    </article>
+                    <article>
+                        <img src="./assets//checkmark.png" 
+                            alt="Skill icon"
+                            class=icon>
+                            <div>
+                                <h3>C++</h3>
+                                <p>Amateur</p>
+                            </div>
+                    </article>
+                    <article>
+                        <img src="./assets//checkmark.png" 
+                            alt="Skill icon"
+                            class=icon>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Amateur</p>
+                            </div>
+                    </article>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="skill-sub-title">Design Skill</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets//checkmark.png" 
+                            alt="Skill icon"
+                            class=icon>
+                            <div>
+                                <h3>Photoshop</h3>
+                                <p>Amateur</p>
+                            </div>
+                    </article>
+                    <article>
+                        <img src="./assets//checkmark.png" 
+                            alt="Skill icon"
+                            class=icon>
+                            <div>
+                                <h3>Wireframing</h3>
+                                <p>Amateur</p>
+                            </div>
+                        </article>
+                    <article>
+                        <img src="./assets//checkmark.png" 
+                            alt="Skill icon"
+                            class=icon>
+                            <div>
+                                <h3>Adobe Illustrator</h3>
+                                <p>Basic</p>
+                            </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+</section>
+<section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" 
+                alt="Email icon" 
+                class="icon contact-icon">
+                <p><a href="mailto:Jeerasak.phis@mail.kmutt.ac.th">Jeerasak.phis@mail.kmutt.ac.th</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/png-transparent-iphone-computer-icons-telephone-email-telephone-electronics-text-mobile-phones-removebg-preview.png" 
+                     alt="Phone icon" 
+                     class="icon contact-icon">
+                <p><a href="tel:+66653515145">065-351-5145</a></p> <!-- Replace XXXXXXXXX with your Thai phone number, omitting the leading zero -->
+            </div>
+            
+        </div>
+</section>
+<footer>
+    <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<script src="script.js"></script> 
+</body>
+</html>                    
